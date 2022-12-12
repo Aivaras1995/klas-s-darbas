@@ -1,0 +1,83 @@
+html, body {
+    width: 100%;
+    height: 90%;
+    padding: 0;
+    background-color: cornflowerblue;
+}
+.wraper > header li {
+    width: 180px;
+    float: left;
+    list-style-type: none;
+    margin: 1px;
+    padding: 30px;
+}
+.meniu2 {
+    display: grid;
+}
+.wraper {
+    height: 5%;
+    width: 100%;
+    display: grid;
+    grid-template-areas:
+        'h h h '
+        't t a '
+        'f f f ';
+}
+.vertybės {
+    float: right;
+    margin: 100px;
+    display: flex;
+}
+.komanda {
+    margin: 5px;
+}
+.atsakingumas {
+    margin: 5px;
+}
+.atsidavimas {
+    margin: 5px;
+}
+.visi {
+    display: grid;
+    grid-template-areas:
+    't t t'
+}
+.Reklama{
+    float: right;
+    width: 100%;
+    height: 100%;
+}
+.wraper  > header {
+    grid-area: h;
+}
+.wraper  > footer {
+    grid-area: f;
+}
+.wraper  > aside {
+    grid-area: a;
+}
+.wraper  > main {
+    grid-area: t;
+}
+header {
+    display: grid;
+    grid-template-areas:
+            'l s s'
+            'n n n';
+}
+header .logo {
+    grid-area: l;
+}
+header .slogan {
+    grid-area: s;
+}
+header nav {
+    grid-area: n;
+}
+li, a, button {
+    color: white;
+    padding: 10px ;
+    text-align: center;
+    font-size: 16px;
+    background-color: cornflowerblue;
+}

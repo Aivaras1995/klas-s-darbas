@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Aivaro Jurgučio portfolio</title>
+    <meta charset=" UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/stilius.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/bootstrap-5.2.3-dist/css/bootstrap.css">
+
+</head>
+<body>
+    <div class="wraper">
+        <header>
+            <div class="logo"><img src="https://dhq0pwhcpqnie.cloudfront.net/company/aj-produktai-uab.png?d=350x220" alt="LOGO" height="100" width="100">
+            </div>
+            <div class="slogan">Ever tried? Ever failed? No matter. Try Again. Fail again. Fail better</div>
+
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">Pradžia</a>
+                </li>
+
+                <li>
+                    <a href="Išsilavinimas">Išsilavinimas</a>
+                </li>
+
+                <li>
+                    <a href="Darbo patirtis">Darbo patirtis</a>
+                </li>
+
+                <li>
+                    <a href="Profesiniai įgūdžiai">Profesiniai įgūdžiai</a>
+                </li>
+                <li>
+                    <a href="Kontaktai">Kontaktai</a>
+                </li>
+            </ul>
+        </nav>
+        </header>
+        <main>
+            <form action="http://localhost/kursiustiduomenis.php" method="GET" class="container-fluid">
+                <div class="row">
+                    <div class="col -3">
+                        <label for="fn" class>"form-label ">Vardas</label>
+                    </div>
+                    <div class="col">
+                        <input name="firstname" type="text" id="fn" class="form-control" />
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-3">
+                        <label for="qtype" class="form-label">Klausimo tipas</label>
+                    </div>
+                    <div class="col">
+                        <select name="q_type" id="qtype"class="form-control">
+                            <option value="ats1">Del darbu</option>
+                            <option value="ats2">Del finansu</option>
+                            <option value="ats3">Del nauju uzsakymu</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="row">
+
+                    <div class="col">
+                        <label for="zinute" class="form-label">Tavo zinute man</label>
+                <br>
+                        <textarea name="message" rows="10" cols="30" id="zinute"class="form-control">
+                    The cat was playing in the garden.
+                        </textarea>
+                    </div>
+                </div>
+                <hr>
+
+                <div class="row">
+                    <div class="col">
+                        <button type="button" onclick="alert('Hello world')"class="form-control btn btn-secondary">Labas!</button>
+                    </div>
+                <div class="col">
+                    <input value="Siųsti" type="submit" class="form-control btn btn-primary" >
+                </div>
+            </div>
+        </form>
+
+            <img src="https://scontent.fvno2-1.fna.fbcdn.net/v/t1.6435-9/70955950_924212481253498_3528036791502241792_n.jpg?stp=dst-jpg_s851x315&_nc_cat=101&ccb=1-7&_nc_sid=da31f3&_nc_ohc=e6UaNCbrCNcAX8stdPC&_nc_ht=scontent.fvno2-1.fna&oh=00_AfABjWHYr6Z21EudnuAKArbjMyLOtCAW_thJXXG6anKlkg&oe=63B691F6"
+             alt="profilio nuotrauka"
+             height="200"
+             width="200"
+        >
+        <h1> Hey there, I'm Aivaras</h1>
+        <p>Backend Developer</p>
+        <p>Esu darbštus ir pareigingas, todėl nesikratau papildomo darbo. Esu pasiruošęs mokytis, kad tapčiau pilnaverčiu komandos nariu ir gebėčiau atlikti paskirtas užduotis ir užimamas pareigas. Nebijau imtis naujų iššūkių ir mokytis naujų dalykų. Galiu dirbti tiek komandoje, tiek individualiai. Esu į tikslą orientuotas žmogus, todėl nemėgstu, kai darbas yra nebaigtas.</p>
+
+        <img src="https://www.michiganstateuniversityonline.com/wp-content/uploads/sites/3/2014/03/build-teamwork-culture-41.jpg?w=715&h=375&crop=1"
+         alt="teamwork" height="150" width="150">
+             <p> Komandinis darbas</p>
+
+         class="foto paveikslas item product"
+    >
+        <iframe width="300"
+            src="https://www.youtube.com/embed/sP-mSAulnpA"
+            title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+        </iframe>
+
+    </main>
+    <aside>
+        <div class="Reklama">Reklama</div>
+    </aside>
+    <footer>
+        Visos teisės saugomos &copy; 2022
+    </footer>
+    </div>
+</body>
+</html>
