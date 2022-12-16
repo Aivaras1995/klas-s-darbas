@@ -7,8 +7,103 @@
 <body>
 
 //
-5)
+<h3>Uzduotis 4</h3>
+<p> Sukurkite studento objektą, naudokite tuos pačius duomenis (vardas, pavarde, ...).</p>
+<p id="demo"></p>
 
+<script>
+        const person = {
+        firstName: "Tomas",
+        lastName : "Tomauskas",
+        mokykla : "KTU",
+        kursas : 4,
+        pazymiai : [7, 4, 5],
+
+    }
+        document.getElementById("demo").innerHTML =
+        person["firstName"] + " " + person["lastName"] + " " + person["mokykla"] + " " + person["kursas"] +
+            " " + person["pazymiai"]
+</script>
+//
+
+<h3>Uzduotys 5 ir 6</h3>
+<p> 5) Sukurkite Objektų masyvą pagal ka tik sukurto Studento objekto struktura.
+6) Išveskite penkto objekto duomenis (vienas bendras console.log()).
+</p>
+<script>
+let masyvas = ['Tomas', 'Tomauskas', 'KTU', 4, [7,4,5]];
+console.log(masyvas);
+</script>
+//
+
+<h3>Uzduotis 7</h3>
+<p> Išveskite tokį patį informacinį sakinį iš objekto duomenų kaip prieš tai išvedėte iš paprastų kintamųjų ("Tomas Tomauskas mokosi KTU, 4 kurse, jo pažymiai: [7, 4, 5].").
+</p>
+<button type="button" onclick="myFunction()">Tomas Tomauskas</button>
+<p id = "demo1"></p>
+<script>
+    function myFunction() {
+        document.getElementById("demo1").innerHTML = "Tomas Tomauskas mokosi 4 kurse. Jo pazymiai 7, 4, 5";
+    }
+</script>
+//
+
+<h3>Uzduotis 8</h3>
+<p> Išveskite visus studento pažymius, esančius objekte. Naudojant for ciklą.</p>
+
+<script>
+    var pazymiai = [7, 7, 4, 5];
+    let i, len, text;
+    for (i = 0, len = pazymiai.length, text = "Tomo Tomausko pazymiai"; i < len; i++) {
+        text += pazymiai[i] + "<br>";
+        console.log(pazymiai);
+    }
+</script>
+//
+
+<h3>Uzduotis 9</h3>
+<p> Pakelkite tris pasirinktus pažymius per vieną skaičių.<br>
+    Tačiau atkreipkite dėmesį ar keliamas pažymys gali būti pakeltas (jei dar ne max),<br>
+    jei jis jau ir taip yra 10, tuomet palikite tokį koks yra.</p>
+
+<p id="demo2"></p>
+
+<script>
+    let pazymiai1 = [7, 4, 5];
+
+    pazymiai1.forEach((num, index) => {
+        pazymiai1[0] [1] [2] = num + 1;
+    });
+    console.log(pazymiai1);
+
+</script>
+//
+
+<h3> Uzduotis  10 </h3>
+<p> Suskaičiuokite ir išveskite trijų pasirinktų pažymių sumą.</p>
+
+<p id="suma"></p>
+
+<script>
+    function sum(a, b, c) {
+        return a + b + c
+    }
+    document.getElementById("suma").innerHTML = sum(7, 4, 8);
+</script>
+
+
+<h3> Uzduotis  11</h3>
+<p> Suskaičiuokite ir išveskite dviejų pasirinktų pažymių sandaugą.</p>
+
+<p id="daugyba"></p>
+
+<script>
+    function multiply(a, b) {
+        return a * b
+    }
+
+    document.getElementById("daugyba").innerHTML = multiply(9, 6);
+</script>
 
 
 </body>
