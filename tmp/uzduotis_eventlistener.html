@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h3>Užduotis1</h3>
+<button id="mybutton">Paspausk mane!</button>
+
+<p id="demo"></p>
+
+<script>
+  document.getElementById("mybutton").addEventListener("click", paspaudimas );
+
+  function paspaudimas() {
+    alert('Labas pasauli!')
+  }
+
+  //
+  <h3>Užduotis 2</h3>
+  <p>Pasirinkite automobilį:</p>
+  <select id="Automobilis">
+      <option value="Audi">Audi</option>
+      <option value="BMW">BMW</option>
+      <option value="Opel">Opel</option>
+      <option value="Volkswagen">Volkswagen</option>
+      <option value="Subaru">Subaru</option>
+  </select>
+  <br>
+          <button id="demo" onclick="Atidaryti formą()">Atidaryti formą</button>
+          <script>
+              document.addEventListener("click", manoFunkcija1);
+              document.addEventListener("click", manoFunkcija2);
+              document.addEventListener("click", manoFunkcija3);
+
+              function manoFunkcija1() {
+              document.getElementById("demo").innerHTML += "Audi"
+          }
+              function manoFunkcija2() {
+              document.getElementById("demo").innerHTML += "BMW"
+          }
+              function manoFunkcija3() {
+              document.getElementById("demo").innerHTML += "Subaru"
+          }
+
+</script>
+
+//
+
+<h3>Užduotis 3 </h3>
+
+<script>
+
+    document.getElementById('addrow').onclick = function() {
+        let input1 = document.getElementById('input1').value;
+        let input2 = document.getElementById('input2').value;
+        let input3 = document.getElementById('input3').value;
+
+        let table = document.getElementById('Table');
+        let row = document.getElementById('tr');
+        let cell1 = document.createElement('tr');
+        let cell2 = document.createElement('tr');
+        let cell3 = document.createElement('td');
+
+        cell1.innerHTML = input1;
+        cell2.innerHTML = input2;
+        cell3.innerHTML = input3;
+
+        row.appendChild(cell1);
+        row.appendChild(cell2);
+        row.appendChild(cell3);
+        table.appendChild(row);
+    }
+</script>
+</body>
+</html>
